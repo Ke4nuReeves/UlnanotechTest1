@@ -2,9 +2,6 @@ package com.dmitriytitov.ulnanotechtest1;
 
 import android.support.annotation.NonNull;
 
-/**
- * Created by Dmitriy Titov on 17.07.2017.
- */
 
 public class RemoteDevice implements Comparable{
     private String name;

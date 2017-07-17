@@ -10,10 +10,6 @@ import android.widget.Toast;
 
 import java.util.Comparator;
 
-/**
- * Created by Dmitriy Titov on 17.07.2017.
- */
-
 public class ActionReceiver extends BroadcastReceiver {
     private final ArrayAdapter<RemoteDevice> arrayAdapter;
 
@@ -37,7 +33,6 @@ public class ActionReceiver extends BroadcastReceiver {
                     return device1.compareTo(device2);
                 }
             });
-
             arrayAdapter.notifyDataSetChanged();
 
         } else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)) {
